@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ylhbe95it-go-gitops
+  description: This is GitOps manifest for ylhbe95it-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=ylhbe95it-go
+    backstage.io/kubernetes-id: ylhbe95it-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ylhbe95it-go
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ylhbe95it-go

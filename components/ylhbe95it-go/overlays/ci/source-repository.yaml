@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ylhbe95it-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ylhbe95it-go
